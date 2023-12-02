@@ -1,4 +1,4 @@
-project = "MIPLearn"
+project = "SGU notebooks"
 copyright = "2020-2023, UChicago Argonne, LLC"
 author = ""
 release = "0.3"
