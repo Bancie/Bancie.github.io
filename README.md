@@ -1,1 +1,35 @@
 # Bancie.github.io
+
+Personal portfolio site for **Nguyễn Chí Bằng**, hosted on GitHub Pages at [https://bancie.github.io](https://bancie.github.io).
+
+Built with [Jekyll](https://jekyllrb.com/) and the [Minimal theme](https://github.com/pages-themes/minimal). Content is sourced from `Recent_Grad_Resume_Template/cv_2.tex`.
+
+## Local development
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Open [http://localhost:4000](http://localhost:4000) for English and [http://localhost:4000/vi/](http://localhost:4000/vi/) for Vietnamese.
+
+## Replace profile photo
+
+1. Add your photo to `assets/images/` (for example `avatar.jpg`).
+2. Update `logo` in `_config.yml`:
+
+```yaml
+logo: /assets/images/avatar.jpg
+```
+
+## Structure
+
+- `index.md` — English About page
+- `vi/index.md` — Vietnamese About page
+- `projects.md` / `vi/projects.md` — Projects
+- `cv.md` — CV download
+- `files/cv.pdf` — PDF resume
+
+## Deployment
+
+Push to `main` and enable GitHub Pages: **Settings → Pages → Deploy from branch `main` / root**.

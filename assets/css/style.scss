@@ -1,0 +1,70 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.site-logo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.contact-links li {
+  margin: 0 0 6px;
+}
+
+.lang-switcher {
+  margin: 0 0 20px;
+}
+
+.lang-btn {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.lang-btn.is-active {
+  background: #f4f4f4;
+  color: #222;
+  font-weight: 700;
+}
+
+.site-nav {
+  margin: 0 0 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-nav a {
+  margin-right: 16px;
+  font-weight: 600;
+}
+
+.site-nav a.is-active {
+  color: #222;
+  border-bottom: 2px solid #267CB9;
+  padding-bottom: 2px;
+}
+
+.project-item {
+  margin-bottom: 28px;
+}
+
+.experience-item {
+  margin-bottom: 24px;
+}
+
+.reference-item {
+  margin-bottom: 16px;
+}
