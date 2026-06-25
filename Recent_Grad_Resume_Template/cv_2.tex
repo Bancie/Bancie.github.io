@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recent Grad Resume Template
+% CV content migrated from sample.tex (AltaCV)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+\makeatletter
+\@fileswtrue
+\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[english]{babel}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{../public.bib}
+
+\textheight=700pt
+
+\begin{document}
+
+\name{Nguyễn Chí Bằng}
+
+\address{chibangn1@gmail.com\\+84 832 946 009\\Ho Chi Minh City}
+\address{4th-year student, Applied Mathematics\\Saigon University}
+
+\begin{resume}
+
+\section{EDUCATION}
+\textbf{Saigon University}, Ho Chi Minh City\\
+{\sl 4th year, Applied Mathematics}, 2022 -- 2026
+
+\section{PROJECTS}
+\par
+\textbf{TiLearn} (7/2024 -- Present): A Python library for machine scheduling.
+\begin{itemize}
+\item Applied optimal time-series scheduling and built an open-source platform for time management.
+\item Supervisor: Dr. Lê Minh Huy, Dr. Trần Thanh Hiệp
+\item \href{https://pypi.org/project/TiLearn/}{PyPI}
+\item \href{https://github.com/Bancie/TiLearn}{GitHub}
+\end{itemize}
+
+\par
+\textbf{Reading Performance} (7/2025 -- Present): A personal system to collect essential life data.
+\begin{itemize}
+\item Developed a system for collecting and analyzing personal data.
+\item Reading performance dataset with demographic and contextual factors reached 40+ upvotes, 1,500 downloads, 5,500 views, and numerous analyses.
+\item \href{https://www.kaggle.com/datasets/chibangng/reading-performance}{Kaggle}
+\item \href{https://huggingface.co/datasets/Bancie/Reading-Dataset}{Hugging Face}
+\end{itemize}
+
+\section{STRENGTHS}
+\textbf{Soft skills}: Hard-working, Fast adaptability, Rapid reading, deep comprehension, Motivator \& Leader.
+\\
+\textbf{AI/ML}: AI, ML/DL, Data Analysis.
+\\
+\textbf{Programming}: C/C++, Python, FastAPI, PyTorch, TensorFlow, ...
+\\
+\textbf{Domain}: Optimization, Statistical, Operations Research.
+
+\begin{format}
+\title{l}\employer{r}\\
+\dates{l}\location{r}\\
+\body\\
+\end{format}
+
+\section{EXPERIENCE}
+\employer{IMACS}
+\location{}
+\dates{12/2025 -- 3/2026}
+\title{\textbf{Intern}}
+\begin{position}
+Drone positioning in GPS-denied environments using Deep Learning
+\begin{itemize}
+\item Researched GPS-free drone positioning using deep learning and reproduced results from the paper.
+\item Supervisor: M.Sc. Nguyễn Văn Gia Thịnh
+\end{itemize}
+\end{position}
+
+\employer{VLU}
+\location{}
+\dates{7/2024 -- Present}
+\title{\textbf{Research and Software Development}}
+\begin{position}
+Time Series Optimization
+\begin{itemize}
+\item Developed optimal scheduling algorithms for single/multi-machine settings and built a Python library implementing the algorithms.
+\item Supervisor: Dr. Lê Minh Huy
+\end{itemize}
+\end{position}
+
+\employer{SGU}
+\location{}
+\dates{8/2023 -- 5/2024}
+\title{\textbf{University-level Research Project}}
+\begin{position}
+Methods for Integer Linear Programming Problems
+\begin{itemize}
+\item Researched Branch and Bound and Gomory methods for integer linear programming and built a Python library implementing the algorithms.
+\item Grade: Excellent.
+\item Supervisor: Assoc. Prof. Dr. Tạ Quang Sơn
+\end{itemize}
+\end{position}
+
+\section{REFERENCES}
+\textbf{Assoc. Prof. Dr. Tạ Quang Sơn}\\
+Faculty of Mathematics and Applications\\
+\href{mailto:taquangson@sgu.edu.vn}{taquangson@sgu.edu.vn}\\
+Saigon University, Ho Chi Minh City, Vietnam
+
+\par
+\textbf{Dr. Lê Minh Huy}\\
+Faculty of Basic Sciences\\
+\href{mailto:huy.lm@vlu.edu.vn}{huy.lm@vlu.edu.vn}\\
+Van Lang University, Ho Chi Minh City, Vietnam
+
+\par
+\textbf{Dr. Trần Thanh Hiệp}\\
+Faculty of Applied Sciences\\
+\href{mailto:ttthiep.sdh241@hcmut.edu.vn}{ttthiep.sdh241@hcmut.edu.vn}\\
+Ho Chi Minh City University of Technology, Vietnam
+
+\section{RESEARCH}
+\nocite{*}
+\printbibliography[heading=none]
+
+\end{resume}
+\end{document}
