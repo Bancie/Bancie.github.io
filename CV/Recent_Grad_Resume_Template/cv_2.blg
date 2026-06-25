@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'cv_2.blg'
+[37] biber-darwin:342> INFO - === Thu Jun 25, 2026, 09:11:55
+[49] Biber.pm:421> INFO - Reading 'cv_2.bcf'
+[93] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[101] Biber.pm:4487> INFO - Processing section 0
+[107] Biber.pm:4678> INFO - Looking for bibtex file '../public.bib' for section 0
+[107] bibtex.pm:1713> INFO - LaTeX decoding ...
+[109] bibtex.pm:1519> INFO - Found BibTeX data source '../public.bib'
+[129] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[129] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[129] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[129] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[130] bbl.pm:676> INFO - Writing 'cv_2.bbl' with encoding 'UTF-8'
+[131] bbl.pm:779> INFO - Output to cv_2.bbl

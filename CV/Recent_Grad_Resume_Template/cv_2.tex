@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recent Grad Resume Template
+% CV content migrated from sample.tex (AltaCV)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+
+\makeatletter
+\@fileswtrue
+\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[english]{babel}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\DeclareQuoteGlyph{T5}{34}
+\DeclareQuoteGlyph{T5}{39}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{../public.bib}
+
+\textheight=700pt
+
+\makeatletter
+\renewcommand{\namefont}{\LARGE\bfseries}
+\newcommand{\lastupdate}{June 25, 2026}
+\def\print@name{%
+  \begingroup
+  \leavevmode\hbox to \textwidth{%
+    {\namefont\@name}%
+    \hfil
+    {\small Last update: \lastupdate}%
+  }%
+  \par\vskip 2pt
+  \fullline
+  \vskip 0.75em
+  \endgroup
+}
+\makeatother
+
+\begin{document}
+
+\name{Nguyễn Chí Bằng}
+
+\begin{resume}
+
+  \section{CONTACT\\INFORMATION}
+  \begin{tabular}[t]{@{}l@{\quad}l@{}}
+    \textbf{Phone:} & \href{tel:+84832946009}{(+84) 832 946 009} \\
+%   \textbf{University Email:} & \href{mailto:}{} \\
+    \textbf{Personal Email:} & \href{mailto:chibangn1@gmail.com}{chibangn1@gmail.com} \\
+    \textbf{Homepage:} & \href{https://bancie.github.io/}{https://bancie.github.io/}
+  \end{tabular}
+
+
+
+  \begin{format}
+    \title{l}\employer{r}\\
+    \dates{l}\location{r}\\
+    \body\\
+  \end{format}
+
+  \section{EXPERIENCE}
+  \employer{12/2025 -- 3/2026}
+  \location{}
+  \dates{Data Science Intern}
+  \title{\href{http://imacs.hcmut.edu.vn}{\textbf{Institute of Mathematical and Computational Sciences (IMACS), HCMUT, Vietnam}}}
+  \begin{position}
+    \begin{itemize}
+      \item Drone positioning in GPS-denied environments using deep learning
+      \item Researched GPS-free drone positioning using deep learning and reproduced results from the paper.
+      \item Supervisor: M.Sc. Nguyễn Văn Gia Thịnh
+    \end{itemize}
+  \end{position}
+
+  \employer{7/2024 -- Present}
+  \location{}
+  \dates{Research and Software Development}
+  \title{\href{https://vlu.edu.vn}{\textbf{Van Lang University (VLU), Vietnam}}}
+  \begin{position}
+    \begin{itemize}
+      \item Time Series Optimization
+      \item Developed optimal scheduling algorithms for single/multi-machine settings and built a Python library implementing the algorithms.
+      \item Supervisor: Dr. Lê Minh Huy
+    \end{itemize}
+  \end{position}
+
+  \employer{8/2023 -- 5/2024}
+  \location{}
+  \dates{University-level Research Project}
+  \title{\href{https://sgu.edu.vn}{\textbf{Saigon University (SGU), Vietnam}}}
+  \begin{position}
+    \begin{itemize}
+      \item Methods for Integer Linear Programming Problems
+      \item Researched Branch and Bound and Gomory methods for integer linear programming and built a Python library implementing the algorithms.
+      \item Grade: Excellent.
+      \item Supervisor: Assoc. Prof. Dr. Tạ Quang Sơn
+    \end{itemize}
+  \end{position}
+
+  \section{PROJECTS}
+  \par
+  \textbf{ScheLoc} (11/2025 -- Present): Optimize transport time using geographic and time-series data.
+  \begin{itemize}
+    \item Combined geographic data with time-series data to optimize transport and delivery schedules.
+    \item Discrete Optimization Research Group, Can Tho University, Vietnam
+    \item GitHub: \textit{link forthcoming} % TODO: \href{https://github.com/...}{GitHub}
+  \end{itemize}
+
+  \par
+  \textbf{DayPilot} (12/2025 -- Present): A natural language personal assistant service for daily task management.
+  \begin{itemize}
+    \item Standalone service spun off from LearningDB; uses MCP tools from LearningDB for habit and personal data access.
+    \item Built with LangChain to orchestrate conversational workflows for day-to-day planning and task management.
+    \item GitHub: \textit{link forthcoming} % TODO: \href{https://github.com/...}{GitHub}
+  \end{itemize}
+
+  \par
+  \href{https://bancie.github.io/TiLearn/}{\textbf{TiLearn}} (7/2024 -- Present): An open-source data science platform for task priority and duration prediction.
+  \begin{itemize}
+    \item Used time-series, work, and personal data to train ML models that predict and rank task priority and estimated execution time.
+    \item Built a Python library and open-source platform for integrating predictions into time-management workflows.
+    \item Supervisor: Dr. Lê Minh Huy, Dr. Trần Thanh Hiệp
+    \item \href{https://pypi.org/project/TiLearn/}{PyPI}
+    \item \href{https://github.com/Bancie/TiLearn}{GitHub}
+  \end{itemize}
+
+  \par
+  \textbf{LearningDB} (6/2024 -- Present): A tracking system for habit data and machine learning pipelines.
+  \begin{itemize}
+    \item Built a habit-tracking system to collect structured personal data and run ML models for data mining.
+    \item Docker Hub: \textit{link forthcoming} % TODO: \href{https://hub.docker.com/r/...}{Docker Hub}
+    \item GitHub: \textit{link forthcoming} % TODO: \href{https://github.com/...}{GitHub}
+  \end{itemize}
+
+  \section{COMPETITIONS}
+  \par
+  \href{https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction}{\textbf{ROGII Wellbore Geology Prediction}} (5/2026 -- Present): Kaggle competition on geosteering and subsurface geology prediction.
+  \begin{itemize}
+    \item Predicted true vertical thickness (TVT) along horizontal wellbores from gamma-ray logs and XYZ trajectory data.
+    \item Built an ML regression pipeline with feature engineering from horizontal--typewell log alignment and trajectory signals; evaluated with RMSE.
+    \item \href{https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction}{Kaggle Competition}
+    \item Kaggle Notebook: \textit{link forthcoming} % TODO: \href{https://www.kaggle.com/code/...}{Notebook}
+  \end{itemize}
+
+  \section{STRENGTHS}
+  \textbf{Soft skills}: Hard-working, Fast adaptability, Rapid reading, deep comprehension, Motivator \& Leader.
+  \\
+  \textbf{AI/ML}: AI, ML/DL, Data Analysis.
+  \\
+  \textbf{Programming}: C/C++, Python, FastAPI, PyTorch, TensorFlow, ...
+  \\
+  \textbf{Domain}: Optimization, Statistical, Operations Research.
+
+  \section{VOLUNTEERS}
+  \par
+  \textbf{Reading Performance} (7/2025 -- Present): A personal system to collect essential life data.
+  \begin{itemize}
+    \item Developed a system for collecting and analyzing personal data.
+    \item Reading performance dataset with demographic and contextual factors reached 40+ upvotes, 1,500 downloads, 5,500 views, and numerous analyses.
+    \item \href{https://www.kaggle.com/datasets/chibangng/reading-performance}{Kaggle}
+    \item \href{https://huggingface.co/datasets/Bancie/Reading-Dataset}{Hugging Face}
+  \end{itemize}
+
+  \section{REFERENCES}
+  \textbf{Assoc. Prof. Dr. Tạ Quang Sơn}\\
+  Faculty of Mathematics and Applications\\
+  \href{mailto:taquangson@sgu.edu.vn}{taquangson@sgu.edu.vn}\\
+  Saigon University, Ho Chi Minh City, Vietnam
+
+  \par
+  \textbf{Dr. Lê Minh Huy}\\
+  Faculty of Basic Sciences\\
+  \href{mailto:huy.lm@vlu.edu.vn}{huy.lm@vlu.edu.vn}\\
+  Van Lang University, Ho Chi Minh City, Vietnam
+
+  \par
+  \textbf{Dr. Trần Thanh Hiệp}\\
+  Faculty of Applied Sciences\\
+  \href{mailto:ttthiep.sdh241@hcmut.edu.vn}{ttthiep.sdh241@hcmut.edu.vn}\\
+  Ho Chi Minh City University of Technology, Vietnam
+
+  \section{EDUCATION}
+  \textbf{Saigon University}, Ho Chi Minh City\\
+  {\sl Bachelor's in Applied Mathematics and Computer Science}, 2022 -- 2026
+
+  \section{RESEARCH}
+  \nocite{*}
+  \printbibliography[heading=none]
+
+\end{resume}
+\end{document}
