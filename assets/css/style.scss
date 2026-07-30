@@ -3,56 +3,274 @@
 
 @import "{{ site.theme }}";
 
+:root {
+  --accent: #267CB9;
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --glass-blur: 14px;
+  --blob-a: rgba(38, 124, 185, 0.12);
+  --blob-b: rgba(120, 180, 210, 0.10);
+  --blob-c: rgba(38, 124, 185, 0.08);
+}
+
+body {
+  background:
+    linear-gradient(165deg, #f7fafc 0%, #eef4f8 45%, #f5f8fb 100%);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Ambient liquid blobs */
+.liquid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.liquid-blob {
+  position: absolute;
+  border-radius: 42% 58% 55% 45% / 48% 42% 58% 52%;
+  filter: blur(72px);
+  will-change: transform;
+  animation: liquid-drift 28s ease-in-out infinite;
+}
+
+.liquid-blob--a {
+  width: min(52vw, 420px);
+  height: min(52vw, 420px);
+  top: -8%;
+  left: -6%;
+  background: var(--blob-a);
+  animation-delay: 0s;
+}
+
+.liquid-blob--b {
+  width: min(48vw, 380px);
+  height: min(48vw, 380px);
+  top: 35%;
+  right: -10%;
+  background: var(--blob-b);
+  border-radius: 55% 45% 42% 58% / 50% 55% 45% 50%;
+  animation-delay: -9s;
+  animation-duration: 34s;
+}
+
+.liquid-blob--c {
+  width: min(40vw, 300px);
+  height: min(40vw, 300px);
+  bottom: -5%;
+  left: 28%;
+  background: var(--blob-c);
+  border-radius: 48% 52% 60% 40% / 55% 40% 60% 45%;
+  animation-delay: -16s;
+  animation-duration: 40s;
+}
+
+@keyframes liquid-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(3%, 4%) scale(1.06);
+  }
+  66% {
+    transform: translate(-2%, 2%) scale(0.96);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-blob {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .liquid-bg {
+    display: none;
+  }
+
+  header {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-nav,
+  .section-nav {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glass sidebar */
+header {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(38, 124, 185, 0.06);
+  padding: 20px 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header h1 {
+  white-space: nowrap;
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+header > p {
+  text-align: center;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  header {
+    background: rgba(255, 255, 255, 0.92);
+  }
+
+  .site-nav,
+  .section-nav {
+    background: rgba(255, 255, 255, 0.88);
+  }
+}
+
 .site-logo {
+  display: block;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.7),
+    0 6px 20px rgba(38, 124, 185, 0.12);
 }
 
 .contact-links {
   list-style: none;
   padding: 0;
   margin: 0 0 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-links li {
-  margin: 0 0 6px;
+  margin: 0;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+  padding: 8px 18px;
+  font-size: 0.92em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3a3a3a;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(58, 58, 58, 0.28);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px) saturate(130%);
+  -webkit-backdrop-filter: blur(8px) saturate(130%);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background: #3a3a3a;
+  border-color: #3a3a3a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  transform: translateY(-1px);
+}
+
+.contact-links__location {
+  margin-top: 4px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .site-nav {
   margin: 0 0 12px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 14px 12px;
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px) saturate(130%);
+  -webkit-backdrop-filter: blur(10px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(38, 124, 185, 0.04);
 }
 
 .site-nav a {
   margin-right: 16px;
   font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
 }
 
 .site-nav a.is-active {
   color: #222;
-  border-bottom: 2px solid #267CB9;
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 2px;
 }
 
 .section-nav {
   margin: 0 0 24px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
+  padding: 8px 12px 10px;
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px) saturate(130%);
+  -webkit-backdrop-filter: blur(8px) saturate(130%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
 }
 
 .section-nav a {
   margin-right: 14px;
   font-size: 0.95em;
   font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-nav a:hover {
+  color: var(--accent);
 }
 
 .section-nav a.is-active {
   color: #222;
-  border-bottom: 2px solid #267CB9;
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 2px;
 }
 
@@ -73,5 +291,20 @@ section h3:first-of-type {
   max-height: 280px;
   object-fit: contain;
   margin: 0.4em 0 0.75em;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(38, 124, 185, 0.08);
+}
+
+/* Minimal theme stacks header full-width on narrow screens;
+   keep glass padding comfortable without breaking the float layout. */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 16px 14px;
+  }
+
+  .site-nav,
+  .section-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
