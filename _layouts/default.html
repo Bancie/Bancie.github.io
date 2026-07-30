@@ -40,6 +40,9 @@
 
       <section>
         {% include site-nav.html %}
+        {% if page.show_section_nav %}
+          {% include section-nav.html %}
+        {% endif %}
         {{ content }}
       </section>
 

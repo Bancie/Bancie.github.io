@@ -24,7 +24,8 @@ logo: /assets/images/avatar.jpg
 
 ## Structure
 
-- `index.md` — About page
+- `index.md` — About (intro, education, skills, research)
+- `experience.md` / `competitions.md` / `volunteers.md` / `references.md` — About section pages
 - `projects.md` — Projects
 - `cv.md` — CV download
 - `files/cv.pdf` — PDF resume
