@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Recent Grad Resume Template
+% CV content migrated from sample.tex (AltaCV)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}
+\newsectionwidth{1.45in}
+
+\makeatletter
+\@fileswtrue
+\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[english]{babel}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\DeclareQuoteGlyph{T5}{34}
+\DeclareQuoteGlyph{T5}{39}
+\usepackage[backend=biber,style=numeric]{biblatex}
+\addbibresource{../public.bib}
+
+\textheight=700pt
+\footskip=30pt
+
+% Page numbers in footer (res.cls defaults to empty)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\makeatletter
+\renewcommand{\namefont}{\LARGE\bfseries}
+\newcommand{\lastupdate}{June 25, 2026}
+\def\print@name{%
+  \begingroup
+  \leavevmode\hbox to \textwidth{%
+    {\namefont\@name}%
+    \hfil
+    {\small Last update: \lastupdate}%
+  }%
+  \par\vskip 2pt
+  \fullline
+  \vskip 0.75em
+  \endgroup
+}
+\makeatother
+
+\begin{document}
+\thispagestyle{fancy}
+
+\name{Nguyễn Chí Bằng}
+
+\begin{resume}
+
+  \section{CONTACT\\INFORMATION}
+  \begin{tabular}[t]{@{}l@{\quad}l@{}}
+    \textbf{Phone:} & \href{tel:+84832946009}{(+84) 832 946 009} \\
+%   \textbf{University Email:} & \href{mailto:}{} \\
+    \textbf{Personal Email:} & \href{mailto:chibangn1@gmail.com}{chibangn1@gmail.com} \\
+    \textbf{Homepage:} & \href{https://bancie.github.io/}{https://bancie.github.io/}
+  \end{tabular}
+
+
+
+  \begin{format}
+    \title{l}\employer{r}\\
+    \dates{l}\location{r}\\
+    \body\\
+  \end{format}
+
+  \section{EXPERIENCE}
+  
+  % \employer{7/2024 -- Present}
+  % \location{}
+  % \dates{}
+  % \title{\href{https://www.vlu.edu.vn/institute/vien-khoa-hoc-tinh-toan-va-tri-tue-nhan-tao}{\textbf{Computational Science and Artificial Intelligence Research Institute (COSARI), VLU, Vietnam}}}
+
+  \employer{Collaborative Researcher}
+  \location{Van Lang University, Vietnam}
+  \dates{7/2024 -- Present}
+  \title{\href{https://www.vlu.edu.vn/institute/vien-khoa-hoc-tinh-toan-va-tri-tue-nhan-tao}{\textbf{Computational Science and Artificial Intelligence Research Institute (COSARI)}}}
+  \begin{position}
+    Built data-driven Python tools that combine time-series data and machine learning to optimize scheduling and logistics decisions.
+    \begin{itemize}
+      \item Applied time-series analysis and ML models to single/multi-machine scheduling and optimal facility location problems.
+      \item Collaborative research with Ho Chi Minh City University of Technology (HCMUT).
+      \item Supervisors: Dr. Lê Minh Huy (VLU), Dr. Trần Thanh Hiệp (HCMUT)
+    \end{itemize}
+  \end{position}
+
+  \employer{Data Science Intern}
+  \location{HCMUT, Vietnam}
+  \dates{12/2025 -- 4/2026}
+  \title{\href{http://imacs.hcmut.edu.vn}{\textbf{Institute of Mathematical and Computational Sciences (IMACS)}}}
+  \begin{position}
+    Built a vision-based UAV self-positioning pipeline for GPS-denied environments by matching drone images to satellite references.
+    \begin{itemize}
+      \item Developed and evaluated a DenseUAV baseline (ViT image feature extractor) for cross-view localization on UAV and satellite imagery.
+      \item Trained models on cloud GPUs using Modal, with experiment tracking on Weights \& Biases (W\&B).
+      \item Evaluation: Excellent.
+      \item Supervisor: M.Sc. Nguyễn Văn Gia Thịnh
+      \item \href{https://wandb.ai/chibangn1-https-bancie-github-io-tilearn-/denseuav-baseline/reports/DenseUAV-Non-GPS-Training-Performance--VmlldzoxNjE5NDMwOQ?accessToken=hl4axuavbu3up6rygu5oy7r3ru3jiwwlg285ax59kdhonfcqgx2n0nhmwex4rfob}{W\&B Report}: Training metrics and loss curves.
+      \item \href{https://huggingface.co/Bancie/UAV-Self-Positioning-23M-ZCN}{Hugging Face}: Published model checkpoint.
+      \item \href{https://github.com/Bancie/denseUAV_baseline}{GitHub}: Baseline model development code.
+    \end{itemize}
+  \end{position}
+
+\section{COMPETITIONS}
+\par
+\href{https://www.kaggle.com/competitions/bank-churn-competition-by-m-linside-ai-specialization}{\textbf{Bank Churn Challenge by MLinside AI Specialization}} (6/2026): Kaggle competition on bank customer churn prediction.
+\begin{itemize}
+  \item Predicted the probability that a bank customer will close their account (binary classification; target: \texttt{Exited}).
+  \item Built an ML classification pipeline with customer-feature engineering and model evaluation using ROC-AUC.
+  \item Ranked \textbf{5th} on the public leaderboard (Score (ROC-AUC): 0.93028).
+  \item \href{https://www.kaggle.com/competitions/bank-churn-competition-by-m-linside-ai-specialization}{Link Kaggle Competition}
+  \item Kaggle Notebook: \textit{link forthcoming} % TODO: \href{https://www.kaggle.com/code/...}{Notebook}
+\end{itemize}
+
+\par
+\href{https://sgu.edu.vn}{\textbf{Methods for Integer Linear Programming Problems}} (5/2024): University-level scientific research project at Saigon University, Vietnam.
+\begin{itemize}
+  \item Applied machine learning to process experimental data for evaluating Branch and Bound and Gomory methods for integer linear programming.
+  \item Grade: Excellent.
+  \item Supervisor: Assoc. Prof. Dr. Tạ Quang Sơn
+\end{itemize}
+
+  \section{PROJECTS}
+  
+  \par
+  \href{https://bancie.github.io/TiLearn/}{\textbf{TiLearn}} (7/2024 -- Present): An open-source data science platform for task priority and duration prediction.
+  \begin{itemize}
+    \item Used time-series, work, and personal data to train ML models that predict and rank task priority and estimated execution time.
+    \item Built a Python library and open-source platform for integrating predictions into time-management workflows.
+    \item Supervisors: Dr. Lê Minh Huy (VLU), Dr. Trần Thanh Hiệp (HCMUT)
+    \item \href{https://pypi.org/project/TiLearn/}{PyPI}
+    \item \href{https://github.com/Bancie/TiLearn}{GitHub}
+  \end{itemize}
+
+  
+  \par
+  \href{https://github.com/Bancie/LearningDB}{\textbf{LearningDB}} (6/2024 -- Present): A personal data platform for habit tracking, ML pipelines, and natural-language daily planning.
+  \begin{itemize}
+    \item Built a habit-tracking system to collect structured personal data and run ML models for data mining.
+    \item Exposed habit and personal data via MCP tools and integrated a LangChain-based conversational assistant for day-to-day planning and task management.
+    \item Deployed as a multi-service stack (API, orchestrator, web) with Docker Hub images.
+    \item \href{https://github.com/Bancie/LearningDB}{GitHub}
+  \end{itemize}
+
+  \par
+  \href{https://github.com/Bancie/scheloc}{\textbf{ScheLoc}} (11/2025 -- Present): Optimize transport time using geographic and time-series data.
+  \begin{itemize}
+    \item Combined geographic data with time-series data to optimize transport and delivery schedules.
+    \item Discrete Optimization Research Group, Can Tho University, Vietnam
+    \item \href{https://github.com/Bancie/scheloc}{GitHub}
+  \end{itemize}
+
+
+  \section{VOLUNTEERS}
+  \par
+  \href{https://github.com/blazickjp/arxiv-mcp-server}{\textbf{ArXiv MCP Server}} (4/2026 -- 7/2026): Open-source contribution to an MCP server that enables AI assistants to search and analyze arXiv papers through a simple Model Context Protocol interface.
+  \begin{itemize}
+    \item Fixed truncated arXiv PDF downloads by streaming \texttt{pdf\_url} with httpx (merged \href{https://github.com/blazickjp/arxiv-mcp-server/pull/99}{PR \#99}; related \href{https://github.com/blazickjp/arxiv-mcp-server/issues/98}{issue \#98}).
+    \item Ranked top 2 human contributor (excluding bots) over Apr--Jul 2026.
+    \item \href{https://github.com/blazickjp/arxiv-mcp-server}{GitHub}
+    \item \href{https://mcpmarket.com/server/arxiv-1}{MCP Market}
+  \end{itemize}
+
+  \par
+  \textbf{Reading Performance} (7/2025): A personal system to collect essential life data.
+  \begin{itemize}
+    \item Developed a system for collecting and analyzing personal data.
+    \item Reading performance dataset with demographic and contextual factors reached 40+ upvotes, 1,500 downloads, 5,500 views, and numerous analyses.
+    \item \href{https://www.kaggle.com/datasets/chibangng/reading-performance}{Kaggle}
+    \item \href{https://huggingface.co/datasets/Bancie/Reading-Dataset}{Hugging Face}
+  \end{itemize}
+
+\section{RESEARCH}
+\nocite{*}
+\printbibliography[heading=none]
+
+  \section{EDUCATION}
+  \textbf{Saigon University}, Ho Chi Minh City, Vietnam \\
+  {\sl Bachelor's in Applied Mathematics and Computer Science}, 2022 -- 2026\\
+  Grade: Good
+
+  \section{ENGLISH}
+  \textbf{VSTEP} - Overall: B2 (CEFR B2), 2026
+
+  \section{STRENGTHS}
+  \textbf{Soft skills}: Collaborative research, Open-source contribution, Fast adaptability, Self-driven learning.
+  \\
+  \textbf{AI/ML}: Full-stack ML/DL, Computer Vision (Detection, Segmentation, Classification, etc.).
+  \\
+  \textbf{Programming}: Python, PyTorch, Scikit-learn, Pandas, NumPy, FastAPI, LangChain, Docker, MCP, GPU Computing (Modal AI), Weights \& Biases.
+  \\
+  \textbf{Others}: Discrete Optimization, Scheduling \& Logistics, Operations Research, Applied Mathematics.
+
+  \section{REFERENCES}
+  \textbf{Assoc. Prof. Dr. Tạ Quang Sơn}\\
+  Faculty of Mathematics and Applications\\
+  \href{mailto:taquangson@sgu.edu.vn}{taquangson@sgu.edu.vn}\\
+  Saigon University, Ho Chi Minh City, Vietnam
+
+  \par
+  \textbf{Dr. Lê Minh Huy}\\
+  Faculty of Basic Sciences\\
+  Computational Science and Artificial Intelligence Research Institute\\
+  \href{mailto:huy.lm@vlu.edu.vn}{huy.lm@vlu.edu.vn}\\
+  Van Lang University, Ho Chi Minh Citay, Vietnam
+
+  \par
+  \textbf{Dr. Trần Thanh Hiệp}\\
+  Faculty of Applied Sciences\\
+  \href{mailto:ttthiep.sdh241@hcmut.edu.vn}{ttthiep.sdh241@hcmut.edu.vn}\\
+  Ho Chi Minh City University of Technology, Vietnam
+  
+  \par
+  \textbf{M.Sc. Nguyễn Văn Gia Thịnh}\\
+  Institute of Mathematical and Computational Sciences\\
+  \href{mailto:nguyenvangiathinh@hcmut.edu.vn}{nguyenvangiathinh@hcmut.edu.vn}\\
+  Ho Chi Minh City University of Technology, Vietnam
+
+
+\end{resume}
+\end{document}
