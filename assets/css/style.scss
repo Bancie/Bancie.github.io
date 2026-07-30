@@ -21,27 +21,8 @@
   margin: 0 0 6px;
 }
 
-.lang-switcher {
-  margin: 0 0 20px;
-}
-
-.lang-btn {
-  display: inline-block;
-  padding: 4px 10px;
-  margin-right: 6px;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-.lang-btn.is-active {
-  background: #f4f4f4;
-  color: #222;
-  font-weight: 700;
-}
-
 .site-nav {
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   padding-bottom: 12px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -57,14 +38,40 @@
   padding-bottom: 2px;
 }
 
-.project-item {
-  margin-bottom: 28px;
+.section-nav {
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
-.experience-item {
-  margin-bottom: 24px;
+.section-nav a {
+  margin-right: 14px;
+  font-size: 0.95em;
+  font-weight: 500;
 }
 
-.reference-item {
-  margin-bottom: 16px;
+.section-nav a.is-active {
+  color: #222;
+  border-bottom: 2px solid #267CB9;
+  padding-bottom: 2px;
+}
+
+section h3 {
+  margin-top: 1.6em;
+  margin-bottom: 0.35em;
+}
+
+section h3:first-of-type {
+  margin-top: 0.5em;
+}
+
+.entry-media {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  margin: 0.4em 0 0.75em;
+  border-radius: 8px;
 }

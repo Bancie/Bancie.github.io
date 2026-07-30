@@ -1,0 +1,6 @@
+<nav class="section-nav" aria-label="About sections">
+  <a href="{{ '/experience/' | relative_url }}"{% if page.section == 'experience' %} class="is-active"{% endif %}>Experience</a>
+  <a href="{{ '/competitions/' | relative_url }}"{% if page.section == 'competitions' %} class="is-active"{% endif %}>Competitions</a>
+  <a href="{{ '/volunteers/' | relative_url }}"{% if page.section == 'volunteers' %} class="is-active"{% endif %}>Volunteers</a>
+  <a href="{{ '/references/' | relative_url }}"{% if page.section == 'references' %} class="is-active"{% endif %}>References</a>
+</nav>

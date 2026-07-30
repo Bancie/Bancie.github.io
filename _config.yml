@@ -1,6 +1,6 @@
 title: Nguyễn Chí Bằng
-description: 4th-year student, Applied Mathematics — Saigon University
-logo: /assets/images/avatar-placeholder.svg
+description: Data Scientist | Data Analyst | Degree in Applied Mathematics and Computer Science
+logo: /assets/images/bancie.jpg
 show_downloads: false
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
@@ -12,7 +12,7 @@ baseurl: ""
 author:
   email: chibangn1@gmail.com
   phone: "+84 832 946 009"
-  location: Ho Chi Minh City
+  location: Ho Chi Minh City, Vietnam
   github: Bancie
 
 defaults:

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +20,10 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% include contact-links.html %}
-        {% include lang-switcher.html %}
 
-        {% if site.github.is_project_page %}
+        <!-- {% if site.github.is_project_page %}
           <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+        {% endif %} -->
 
         {% if site.github.is_user_page %}
           <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
@@ -41,14 +40,17 @@
 
       <section>
         {% include site-nav.html %}
+        {% if page.show_section_nav %}
+          {% include section-nav.html %}
+        {% endif %}
         {{ content }}
       </section>
 
       <footer>
         {% if site.github.is_project_page %}
-          <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+          <p>Last updated {{ site.time | date: "%B %Y" }} by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <!-- <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>

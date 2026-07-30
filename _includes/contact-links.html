@@ -1,5 +1,6 @@
 <ul class="contact-links">
   <li><a href="mailto:{{ site.author.email }}">Email</a></li>
+  <li><a href="tel:{{ site.author.phone | replace: ' ', '' }}">Phone</a></li>
   <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
   <li>{{ site.author.location }}</li>
 </ul>

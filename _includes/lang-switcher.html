@@ -1,8 +1,0 @@
-{% assign current_lang = page.lang | default: 'en' %}
-{% assign en_url = page.en_url | default: '/' %}
-{% assign vi_url = page.vi_url | default: '/vi/' %}
-
-<nav class="lang-switcher" aria-label="Language">
-  <a href="{{ en_url | relative_url }}" class="lang-btn{% if current_lang == 'en' %} is-active{% endif %}">English</a>
-  <a href="{{ vi_url | relative_url }}" class="lang-btn{% if current_lang == 'vi' %} is-active{% endif %}">Tiếng Việt</a>
-</nav>

@@ -1,22 +1,5 @@
-{% assign current_lang = page.lang | default: 'en' %}
-{% if current_lang == 'vi' %}
-  {% assign about_url = '/vi/' %}
-  {% assign projects_url = '/vi/projects/' %}
-  {% assign cv_url = '/cv/' %}
-{% else %}
-  {% assign about_url = '/' %}
-  {% assign projects_url = '/projects/' %}
-  {% assign cv_url = '/cv/' %}
-{% endif %}
-
 <nav class="site-nav" aria-label="Main">
-  {% if current_lang == 'vi' %}
-    <a href="{{ about_url | relative_url }}"{% if page.nav == 'about' %} class="is-active"{% endif %}>Giới thiệu</a>
-    <a href="{{ projects_url | relative_url }}"{% if page.nav == 'projects' %} class="is-active"{% endif %}>Dự án</a>
-    <a href="{{ cv_url | relative_url }}"{% if page.nav == 'cv' %} class="is-active"{% endif %}>CV</a>
-  {% else %}
-    <a href="{{ about_url | relative_url }}"{% if page.nav == 'about' %} class="is-active"{% endif %}>About</a>
-    <a href="{{ projects_url | relative_url }}"{% if page.nav == 'projects' %} class="is-active"{% endif %}>Projects</a>
-    <a href="{{ cv_url | relative_url }}"{% if page.nav == 'cv' %} class="is-active"{% endif %}>CV</a>
-  {% endif %}
+  <a href="{{ '/' | relative_url }}"{% if page.nav == 'about' %} class="is-active"{% endif %}>About</a>
+  <a href="{{ '/projects/' | relative_url }}"{% if page.nav == 'projects' %} class="is-active"{% endif %}>Projects</a>
+  <a href="{{ '/cv/' | relative_url }}"{% if page.nav == 'cv' %} class="is-active"{% endif %}>CV</a>
 </nav>
