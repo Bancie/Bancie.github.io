@@ -6,19 +6,13 @@ show_section_nav: true
 permalink: /
 ---
 
-Welcome to my homepage! I'm **Nguyễn Chí Bằng**. I hold a Bachelor's in Applied Mathematics and Computer Science from [Saigon University](https://sgu.edu.vn/), Ho Chi Minh City (2022–2026). Grade: Good.
-
-Email: [chibangn1@gmail.com](mailto:chibangn1@gmail.com)
+Welcome to my homepage! I'm **Nguyễn Chí Bằng**. I'm passionate about data and machine learning - turning real-world signals into models that support better decisions.
 
 ## Education
 
 **Saigon University**, Ho Chi Minh City, Vietnam  
-*Bachelor's in Applied Mathematics and Computer Science*, 2022 – 2026  
+_Bachelor's in Applied Mathematics and Computer Science_, 2022 – 2026  
 Grade: Good
-
-## English
-
-**VSTEP** — Overall: B2 (CEFR B2), 2026
 
 ## Skills
 

@@ -7,7 +7,10 @@ permalink: /projects/
 
 ## Projects
 
-### [TiLearn](https://bancie.github.io/TiLearn/)
+<h3><a href="https://bancie.github.io/TiLearn/">TiLearn</a></h3>
+
+<img class="entry-media" src="{{ '/assets/images/tilearncv.png' | relative_url }}" alt="TiLearn" />
+
 *7/2024 – Present*
 
 An open-source data science platform for task priority and duration prediction.
@@ -18,7 +21,10 @@ An open-source data science platform for task priority and duration prediction.
 - [PyPI](https://pypi.org/project/TiLearn/)
 - [GitHub](https://github.com/Bancie/TiLearn)
 
-### [LearningDB](https://github.com/Bancie/LearningDB)
+<h3><a href="https://github.com/Bancie/LearningDB">LearningDB</a></h3>
+
+<img class="entry-media" src="{{ '/assets/images/LearningDB_logo.png' | relative_url }}" alt="LearningDB" />
+
 *6/2024 – Present*
 
 A personal data platform for habit tracking, ML pipelines, and natural-language daily planning.
@@ -28,7 +34,10 @@ A personal data platform for habit tracking, ML pipelines, and natural-language 
 - Deployed as a multi-service stack (API, orchestrator, web) with Docker Hub images.
 - [GitHub](https://github.com/Bancie/LearningDB)
 
-### [ScheLoc](https://github.com/Bancie/scheloc)
+<h3><a href="https://github.com/Bancie/scheloc">ScheLoc</a></h3>
+
+<img class="entry-media" src="{{ '/assets/images/scheloc.jpg' | relative_url }}" alt="ScheLoc" />
+
 *11/2025 – Present*
 
 Optimize transport time using geographic and time-series data.

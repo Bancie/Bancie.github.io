@@ -64,3 +64,14 @@ section h3 {
 section h3:first-of-type {
   margin-top: 0.5em;
 }
+
+.entry-media {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  margin: 0.4em 0 0.75em;
+  border-radius: 8px;
+}

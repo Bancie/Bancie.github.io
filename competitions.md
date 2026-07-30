@@ -9,7 +9,10 @@ permalink: /competitions/
 
 ## Competitions
 
-### [Bank Churn Challenge by MLinside AI Specialization](https://www.kaggle.com/competitions/bank-churn-competition-by-m-linside-ai-specialization)
+<h3><a href="https://www.kaggle.com/competitions/bank-churn-competition-by-m-linside-ai-specialization">Bank Churn Challenge by MLinside AI Specialization</a></h3>
+
+<img class="entry-media" src="{{ '/assets/images/mlinside.png' | relative_url }}" alt="MLinside" />
+
 *6/2026*
 
 Kaggle competition on bank customer churn prediction.

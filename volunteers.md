@@ -9,7 +9,10 @@ permalink: /volunteers/
 
 ## Volunteers
 
-### [ArXiv MCP Server](https://github.com/blazickjp/arxiv-mcp-server)
+<h3><a href="https://github.com/blazickjp/arxiv-mcp-server">ArXiv MCP Server</a></h3>
+
+<img class="entry-media" src="{{ '/assets/images/arxiv_logo.jpg' | relative_url }}" alt="arXiv" />
+
 *4/2026 – 7/2026*
 
 Open-source contribution to an MCP server that enables AI assistants to search and analyze arXiv papers through a simple Model Context Protocol interface.
@@ -19,7 +22,10 @@ Open-source contribution to an MCP server that enables AI assistants to search a
 - [GitHub](https://github.com/blazickjp/arxiv-mcp-server)
 - [MCP Market](https://mcpmarket.com/server/arxiv-1)
 
-### Reading Performance
+<h3>Reading Performance</h3>
+
+<img class="entry-media" src="{{ '/assets/images/reading_per.png' | relative_url }}" alt="Reading Performance" />
+
 *7/2025*
 
 A personal system to collect essential life data.

@@ -9,8 +9,11 @@ permalink: /experience/
 
 ## Experience
 
-### Collaborative Researcher — [COSARI](https://www.vlu.edu.vn/institute/vien-khoa-hoc-tinh-toan-va-tri-tue-nhan-tao), Van Lang University
-*7/2024 – Present*
+<h3>Collaborative Researcher — <a href="https://www.vlu.edu.vn/institute/vien-khoa-hoc-tinh-toan-va-tri-tue-nhan-tao">COSARI</a>, Van Lang University</h3>
+
+<img class="entry-media" src="{{ '/assets/images/cosari.avif' | relative_url }}" alt="COSARI" />
+
+_7/2024 – Present_
 
 Built data-driven Python tools that combine time-series data and machine learning to optimize scheduling and logistics decisions.
 
@@ -18,8 +21,11 @@ Built data-driven Python tools that combine time-series data and machine learnin
 - Collaborative research with Ho Chi Minh City University of Technology (HCMUT).
 - Supervisors: Dr. Lê Minh Huy (VLU), Dr. Trần Thanh Hiệp (HCMUT)
 
-### Data Science Intern — [IMACS](http://imacs.hcmut.edu.vn), HCMUT
-*12/2025 – 4/2026*
+<h3>Data Science Intern — <a href="http://imacs.hcmut.edu.vn">IMACS</a>, HCMUT</h3>
+
+<img class="entry-media" src="{{ '/assets/images/imacs_logo.png' | relative_url }}" alt="IMACS" />
+
+_12/2025 – 4/2026_
 
 Built a vision-based UAV self-positioning pipeline for GPS-denied environments by matching drone images to satellite references.
 
