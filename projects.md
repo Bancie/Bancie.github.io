@@ -2,9 +2,6 @@
 layout: default
 title: Projects
 nav: projects
-lang: en
-en_url: /projects/
-vi_url: /vi/projects/
 permalink: /projects/
 ---
 
@@ -12,13 +9,14 @@ permalink: /projects/
 
 <div class="project-item">
 
-### TiLearn
+### [TiLearn](https://bancie.github.io/TiLearn/)
 *7/2024 – Present*
 
-A Python library for machine scheduling.
+An open-source data science platform for task priority and duration prediction.
 
-- Applied optimal time-series scheduling and built an open-source platform for time management.
-- Supervisors: Dr. Lê Minh Huy, Dr. Trần Thanh Hiệp
+- Used time-series, work, and personal data to train ML models that predict and rank task priority and estimated execution time.
+- Built a Python library and open-source platform for integrating predictions into time-management workflows.
+- Supervisors: Dr. Lê Minh Huy (VLU), Dr. Trần Thanh Hiệp (HCMUT)
 - [PyPI](https://pypi.org/project/TiLearn/)
 - [GitHub](https://github.com/Bancie/TiLearn)
 
@@ -26,14 +24,27 @@ A Python library for machine scheduling.
 
 <div class="project-item">
 
-### Reading Performance
-*7/2025 – Present*
+### [LearningDB](https://github.com/Bancie/LearningDB)
+*6/2024 – Present*
 
-A personal system to collect essential life data.
+A personal data platform for habit tracking, ML pipelines, and natural-language daily planning.
 
-- Developed a system for collecting and analyzing personal data.
-- Reading performance dataset with demographic and contextual factors reached 40+ upvotes, 1,500 downloads, 5,500 views, and numerous analyses.
-- [Kaggle](https://www.kaggle.com/datasets/chibangng/reading-performance)
-- [Hugging Face](https://huggingface.co/datasets/Bancie/Reading-Dataset)
+- Built a habit-tracking system to collect structured personal data and run ML models for data mining.
+- Exposed habit and personal data via MCP tools and integrated a LangChain-based conversational assistant for day-to-day planning and task management.
+- Deployed as a multi-service stack (API, orchestrator, web) with Docker Hub images.
+- [GitHub](https://github.com/Bancie/LearningDB)
+
+</div>
+
+<div class="project-item">
+
+### [ScheLoc](https://github.com/Bancie/scheloc)
+*11/2025 – Present*
+
+Optimize transport time using geographic and time-series data.
+
+- Combined geographic data with time-series data to optimize transport and delivery schedules.
+- Discrete Optimization Research Group, Can Tho University, Vietnam
+- [GitHub](https://github.com/Bancie/scheloc)
 
 </div>
