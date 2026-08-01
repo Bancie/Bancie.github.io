@@ -31,6 +31,7 @@ A personal data platform for habit tracking, ML pipelines, and natural-language 
 
 - Built a habit-tracking system to collect structured personal data and run ML models for data mining.
 - Exposed habit and personal data via MCP tools and integrated a LangChain-based conversational assistant for day-to-day planning and task management.
+- Designed and built a relational MySQL database from scratch, then deployed and operated it in production.
 - Deployed as a multi-service stack (API, orchestrator, web) with Docker Hub images.
 - [GitHub](https://github.com/Bancie/LearningDB)
 
