@@ -27,9 +27,9 @@ Built data-driven Python tools that combine time-series data and machine learnin
 
 _12/2025 – 4/2026_
 
-Built a vision-based UAV self-positioning pipeline for GPS-denied environments by matching drone images to satellite references.
+Built a vision-based UAV self-positioning pipeline for GPS-denied environments using embedding-based retrieval to match drone images to satellite references.
 
-- Developed and evaluated a DenseUAV baseline (ViT image feature extractor) for cross-view localization on UAV and satellite imagery.
+- Developed and evaluated a DenseUAV baseline (ViT image embeddings) for embedding-based cross-view retrieval and localization on UAV and satellite imagery.
 - Trained models on cloud GPUs using Modal, with experiment tracking on Weights & Biases (W&B).
 - Evaluation: Excellent.
 - Supervisor: M.Sc. Nguyễn Văn Gia Thịnh
